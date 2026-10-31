@@ -36,7 +36,6 @@ jobs:
       - name: Prepare Deployment
         run: |
           cp ./dist/index.html ./dist/404.html
-          cp -r ./content ./dist/content
           echo "jeannettemills.pagekey.io" > ./dist/CNAME
 
       - name: Upload Pages artifact
