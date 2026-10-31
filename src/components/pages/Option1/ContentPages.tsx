@@ -71,7 +71,7 @@ function PageFooter() {
         </Link>
       </div>
       <div className="footer-bottom">
-        <span>© 2026 Jeannette Mills. All rights reserved.</span>
+        <span>&copy; {new Date().getFullYear()} Jeannette Mills. All rights reserved.</span>
         <span>
           Website by <a href="https://pagekey.io">PageKey</a>
         </span>

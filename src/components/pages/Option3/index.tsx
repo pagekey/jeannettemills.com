@@ -68,10 +68,9 @@ function Footer() {
       <p>Leadership is the story we leave in other people.</p>
       <div className="o3-footer-links">
         <a href="mailto:hello@jeannettemills.com">hello@jeannettemills.com</a>
-        <Link to="/option-3">Return to the beginning</Link>
       </div>
       <small>
-        © 2026 Jeannette Mills. All rights reserved. Website by{" "}
+        &copy; {new Date().getFullYear()} Jeannette Mills. All rights reserved. Website by{" "}
         <a href="https://pagekey.io">PageKey</a>
       </small>
     </footer>
@@ -100,11 +99,6 @@ export default function OptionThree() {
         </div>
         <div className="o3-hero-portrait">
           <img src={executivePortrait} alt="Jeannette Mills" />
-        </div>
-        <div className="o3-hero-side">
-          <span>01</span>
-          <span>Jeannette Mills</span>
-          <span>Executive. Author. Guide.</span>
         </div>
       </section>
 

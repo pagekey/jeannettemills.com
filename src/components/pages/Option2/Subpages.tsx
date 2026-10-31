@@ -34,7 +34,7 @@ function Footer() {
         <a href="mailto:hello@jeannettemills.com">hello@jeannettemills.com</a>
         <Link to="/option-2">Home</Link>
       </div>
-      <small>© 2026 Jeannette Mills. All rights reserved.</small>
+      <small>&copy; 2026 Jeannette Mills. All rights reserved.</small>
     </footer>
   );
 }

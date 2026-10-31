@@ -304,7 +304,7 @@ export default function Home() {
         </div>
         <div className="footer-bottom">
           <span>
-            © {new Date().getFullYear()} Jeannette Mills. All rights reserved.
+            &copy; {new Date().getFullYear()} Jeannette Mills. All rights reserved.
           </span>
           <span>
             Website by <a href="https://pagekey.io">PageKey</a>

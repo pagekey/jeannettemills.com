@@ -218,7 +218,7 @@ export default function OptionTwo() {
           <a href="mailto:hello@jeannettemills.com">hello@jeannettemills.com</a>
           <a href="#top">Back to top</a>
         </div>
-        <small>© 2026 Jeannette Mills. All rights reserved.</small>
+        <small>&copy; {new Date().getFullYear()} Jeannette Mills. All rights reserved.</small>
       </footer>
     </main>
   );
