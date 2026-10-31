@@ -1,5 +1,10 @@
 import { ArrowDownRight, ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
+import executivePortrait from "@/assets/jeannette-exec-portrait-1.jpg";
+import baltimorePolytech from "@/assets/jeannette-baltimore-polytech.jpg";
+import gardenPortrait from "@/assets/jeannette-garden.jpg";
+import tommesGirlMockup from "@/assets/tommes-girl-mockup.png";
+import leadBoldlyMockup from "@/assets/lead-boldly-mockup.png";
 
 const consultationUrl =
   "mailto:hello@jeannettemills.com?subject=Consultation%20Inquiry";
@@ -15,36 +20,6 @@ function ArrowLink({
     <a className="arrow-link" href={href}>
       {children} <ArrowRight aria-hidden="true" size={17} strokeWidth={1.7} />
     </a>
-  );
-}
-
-function BookCover({ type }: { type: "tomme" | "workbook" }) {
-  const isTomme = type === "tomme";
-  return (
-    <div className={`book-cover ${isTomme ? "tomme-cover" : "workbook-cover"}`}>
-      <span className="book-cover-kicker">JEANNETTE M. MILLS</span>
-      <div className="book-cover-title">
-        {isTomme ? (
-          <>
-            Tomme's
-            <br />
-            Girl
-          </>
-        ) : (
-          <>
-            LEAD
-            <br />
-            BOLDLY
-          </>
-        )}
-      </div>
-      <span className="book-cover-subtitle">
-        {isTomme
-          ? "A story of roots, resilience & becoming"
-          : "A leadership workbook"}
-      </span>
-      {!isTomme && <span className="book-cover-mark">LB</span>}
-    </div>
   );
 }
 
@@ -103,23 +78,8 @@ export default function Home() {
               Start the conversation <ArrowRight size={18} />
             </a>
           </div>
-          <div
-            className="hero-image image-placeholder"
-            role="img"
-            aria-label="Portrait placeholder for Jeannette Mills"
-          >
-            <div className="portrait-frame">
-              <span>
-                Jeannette
-                <br />
-                Mills
-              </span>
-            </div>
-            <p>
-              Portrait image
-              <br />
-              placement
-            </p>
+          <div className="hero-image">
+            <img src={executivePortrait} alt="Jeannette Mills" />
           </div>
         </div>
         <div className="hero-footnote">
@@ -133,6 +93,9 @@ export default function Home() {
           <span>01</span> The work
         </div>
         <div className="intro-content">
+          <div className="intro-image">
+          <img src={gardenPortrait} alt="Jeannette Mills" />
+          </div>
           <p className="eyebrow">Leadership is personal</p>
           <h2>
             Real leadership is measured in the people you{" "}
@@ -158,16 +121,8 @@ export default function Home() {
       </section>
 
       <section className="experience section">
-        <div
-          className="experience-image image-placeholder"
-          role="img"
-          aria-label="Executive portrait placeholder for Jeannette Mills"
-        >
-          <div className="image-placeholder-label">
-            Executive portrait
-            <br />
-            placement
-          </div>
+        <div className="experience-image">
+          <img src={baltimorePolytech} alt="Jeannette Mills at Baltimore Polytechnic Institute" />
         </div>
         <div className="experience-copy">
           <p className="eyebrow">A career of consequence</p>
@@ -259,8 +214,8 @@ export default function Home() {
 
       <section className="books section" id="books">
         <div className="book-visuals">
-          <BookCover type="tomme" />
-          <BookCover type="workbook" />
+          <img className="book-mockup tomme-mockup" src={tommesGirlMockup} alt="Tomme's Girl by Jeannette Mills" />
+          <img className="book-mockup workbook-mockup" src={leadBoldlyMockup} alt="LEAD BOLDLY Leadership Workbook by Jeannette Mills" />
         </div>
         <div className="books-copy">
           <p className="eyebrow">The story behind the work</p>
