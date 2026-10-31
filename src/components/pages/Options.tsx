@@ -13,7 +13,7 @@ export default function Options() {
         <div className="options-intro">
           <p className="options-eyebrow">Jeannette Mills</p>
           <h1>
-            Two directions.
+            Three directions.
             <br />
             One strong story.
           </h1>
@@ -50,6 +50,21 @@ export default function Options() {
             </div>
             <Link className="options-action" to="/option-2">
               View Option 2 <ArrowRight size={16} />
+            </Link>
+          </article>
+          <article className="option-card">
+            <span className="option-number">03</span>
+            <div>
+              <h2>Literary editorial</h2>
+              <p>
+                Here&apos;s my story, and here&apos;s what I&apos;ve learned.
+                Warm paper, expressive editorial typography, art-directed
+                photography, and books presented as the center of a personal
+                publication.
+              </p>
+            </div>
+            <Link className="options-action" to="/option-3">
+              View Option 3 <ArrowRight size={16} />
             </Link>
           </article>
         </div>
