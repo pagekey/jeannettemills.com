@@ -1,17 +1,17 @@
 import { ArrowDownRight, ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import executivePortrait from "@/assets/jeannette-exec-portrait-1.jpg";
 import baltimorePolytech from "@/assets/jeannette-baltimore-polytech.jpg";
 import gardenPortrait from "@/assets/jeannette-garden.jpg";
 import tommesGirlMockup from "@/assets/tommes-girl-mockup.png";
 import leadBoldlyMockup from "@/assets/lead-boldly-mockup.png";
 
-const consultationUrl =
-  "mailto:hello@jeannettemills.com?subject=Consultation%20Inquiry";
+const consultationUrl = "/contact";
 
 function ArrowLink({
   children,
-  href = "#contact",
+  href = "/contact",
 }: {
   children: React.ReactNode;
   href?: string;
@@ -30,10 +30,10 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Jeannette Mills home">
+        <Link className="wordmark" to="/option-1" aria-label="Jeannette Mills home">
           <span>Jeannette</span>
           <strong>Mills</strong>
-        </a>
+        </Link>
         <button
           className="menu-button"
           aria-label="Toggle navigation"
@@ -43,16 +43,16 @@ export default function Home() {
           {menuOpen ? <X size={24} /> : <Menu size={25} />}
         </button>
         <nav className={menuOpen ? "open" : ""} aria-label="Primary navigation">
-          <a href="#about" onClick={closeMenu}>
+          <a href="/about" onClick={closeMenu}>
             About
           </a>
-          <a href="#services" onClick={closeMenu}>
+          <a href="/work-with-jeannette" onClick={closeMenu}>
             Work With Jeannette
           </a>
-          <a href="#books" onClick={closeMenu}>
+          <a href="/books" onClick={closeMenu}>
             Books
           </a>
-          <a href="#contact" onClick={closeMenu}>
+          <a href="/contact" onClick={closeMenu}>
             Contact
           </a>
         </nav>
@@ -145,7 +145,7 @@ export default function Home() {
             leadership teams, and professionals who understand that stronger
             leadership creates stronger organizations.
           </p>
-          <ArrowLink href={consultationUrl}>Work with Jeannette</ArrowLink>
+          <ArrowLink href="/work-with-jeannette">Work with Jeannette</ArrowLink>
         </div>
       </section>
 
@@ -207,7 +207,7 @@ export default function Home() {
               Stories, reflection, and application designed to help individuals
               and organizations turn leadership insight into action.
             </p>
-            <ArrowLink href="#books">Explore products</ArrowLink>
+            <ArrowLink href="/books">Explore products</ArrowLink>
           </article>
         </div>
       </section>
@@ -238,7 +238,7 @@ export default function Home() {
             Together, they create more than a memoir. They create a leadership
             development experience.
           </p>
-          <ArrowLink>Discover the collection</ArrowLink>
+          <ArrowLink href="/books">Discover the collection</ArrowLink>
         </div>
       </section>
 
@@ -266,10 +266,10 @@ export default function Home() {
 
       <footer id="contact">
         <div className="footer-top">
-          <a className="wordmark" href="#top">
+          <Link className="wordmark" to="/option-1">
             <span>Jeannette</span>
             <strong>Mills</strong>
-          </a>
+          </Link>
           <p>
             Lead boldly. Develop people.
             <br />
@@ -280,7 +280,7 @@ export default function Home() {
           <a href={consultationUrl}>hello@jeannettemills.com</a>
           <a href="#top">Instagram</a>
           <a href="#top">LinkedIn</a>
-          <a href="#top">
+          <a href="/option-1">
             Back to top <ArrowRight size={15} />
           </a>
         </div>
