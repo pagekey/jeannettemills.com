@@ -54,6 +54,7 @@ a {
 }
 .options-footer {
   border-top: 1px solid #3f3f46;
+  background: #101012;
   margin-top: auto;
 }
 .options-brand {
@@ -114,7 +115,23 @@ a {
   line-height: 1;
   margin: 0 0 13px;
 }
-.option-card p {
+.option-details {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+}
+.option-details div {
+  display: grid;
+  gap: 5px;
+}
+.option-details dt {
+  color: #d4d4d8;
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.option-details dd {
   color: #a1a1aa;
   font-size: 13px;
   line-height: 1.55;
@@ -174,15 +191,26 @@ a {
   .options-intro {
     padding: 35px 22px;
   }
+  .options-intro h1,
+  .not-found-content h1 {
+    font-size: clamp(2.25rem, 12vw, 3.4rem);
+    letter-spacing: -0.06em;
+  }
   .options-list {
     grid-template-columns: 1fr;
   }
   .option-card {
+    gap: 14px;
+    grid-template-columns: 1fr;
     padding: 26px 22px;
   }
   .option-card + .option-card {
     border-left: 0;
     border-top: 1px solid #3f3f46;
+  }
+  .options-action {
+    grid-column: 1;
+    margin-top: 2px;
   }
   .not-found-content {
     padding: 80px 22px;

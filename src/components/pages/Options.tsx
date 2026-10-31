@@ -27,14 +27,22 @@ export default function Options() {
             <span className="option-number">01</span>
             <div>
               <h2>Executive editorial</h2>
-              <p>
-                Deep green, high-contrast backgrounds, large editorial
-                typography, strong geometric layouts and section numbers.
-                Prominent portrait photography for a confident,
-                corporate-executive feel.
-              </p>
+              <dl className="option-details">
+                <div>
+                  <dt>What it says</dt>
+                  <dd>I&apos;m an executive.</dd>
+                </div>
+                <div>
+                  <dt>Design elements</dt>
+                  <dd>
+                    Deep green, high-contrast backgrounds, large editorial
+                    typography, strong geometric layouts, section numbers, and
+                    prominent portrait photography.
+                  </dd>
+                </div>
+              </dl>
             </div>
-            <Link className="options-action" to="/option-1">
+            <Link className="options-action" to="/option-1" target="_blank">
               View Option 1 <ArrowRight size={16} />
             </Link>
           </article>
@@ -42,13 +50,22 @@ export default function Options() {
             <span className="option-number">02</span>
             <div>
               <h2>Quiet luxury</h2>
-              <p>
-                Warm white, charcoal, restrained serif typography, generous
-                whitespace, subtle dividers, and beautiful portrait photography.
-                Thoughtful, established, confident.
-              </p>
+              <dl className="option-details">
+                <div>
+                  <dt>What it says</dt>
+                  <dd>I&apos;m an established professional.</dd>
+                </div>
+                <div>
+                  <dt>Design elements</dt>
+                  <dd>
+                    Warm white, charcoal, restrained serif typography, generous
+                    whitespace, subtle dividers, and beautiful portrait
+                    photography.
+                  </dd>
+                </div>
+              </dl>
             </div>
-            <Link className="options-action" to="/option-2">
+            <Link className="options-action" to="/option-2" target="_blank">
               View Option 2 <ArrowRight size={16} />
             </Link>
           </article>
@@ -56,14 +73,25 @@ export default function Options() {
             <span className="option-number">03</span>
             <div>
               <h2>Literary editorial</h2>
-              <p>
-                Here&apos;s my story, and here&apos;s what I&apos;ve learned.
-                Warm paper, expressive editorial typography, art-directed
-                photography, and books presented as the center of a personal
-                publication.
-              </p>
+              <dl className="option-details">
+                <div>
+                  <dt>What it says</dt>
+                  <dd>
+                    Here&apos;s my story, and here&apos;s what I&apos;ve
+                    learned.
+                  </dd>
+                </div>
+                <div>
+                  <dt>Design elements</dt>
+                  <dd>
+                    Warm paper, expressive editorial typography, art-directed
+                    photography, and books presented as the center of a personal
+                    publication.
+                  </dd>
+                </div>
+              </dl>
             </div>
-            <Link className="options-action" to="/option-3">
+            <Link className="options-action" to="/option-3" target="_blank">
               View Option 3 <ArrowRight size={16} />
             </Link>
           </article>
