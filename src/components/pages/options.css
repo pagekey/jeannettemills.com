@@ -1,0 +1,55 @@
+.options-page {
+  align-items: center;
+  background: #18181b;
+  color: #f4f4f5;
+  display: flex;
+  font-family: "Inter Variable", Arial, sans-serif;
+  justify-content: center;
+  min-height: 100svh;
+  padding: 22px;
+}
+
+.options-page .options-board {
+  background: #18181b;
+  border: 1px solid #3f3f46;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100svh - 44px);
+  max-width: 1080px;
+  min-height: min(680px, calc(100svh - 44px));
+  overflow: hidden;
+  width: 100%;
+}
+
+.options-page .options-header,
+.options-page .options-footer {
+  color: #a1a1aa;
+}
+
+.options-page .options-brand,
+.options-page .options-eyebrow,
+.options-page .option-number,
+.options-page .options-action {
+  color: #fb923c;
+}
+
+.options-page .options-intro h1,
+.options-page .option-card h2 {
+  color: #f4f4f5;
+  font-family: "Inter Variable", Arial, sans-serif;
+}
+
+.options-page .options-intro > p:last-child,
+.options-page .option-card p {
+  color: #a1a1aa;
+}
+
+.options-page .options-action {
+  background: transparent;
+  border-color: #fb923c;
+}
+
+.options-page .options-action:hover {
+  background: #fb923c;
+  color: #18181b;
+}

@@ -6,12 +6,13 @@ import baltimorePolytech from "@/assets/jeannette-baltimore-polytech.jpg";
 import gardenPortrait from "@/assets/jeannette-garden.jpg";
 import tommesGirlMockup from "@/assets/tommes-girl-mockup.png";
 import leadBoldlyMockup from "@/assets/lead-boldly-mockup.png";
+import "./option1.css";
 
-const consultationUrl = "/contact";
+const consultationUrl = "/option-1/contact";
 
 function ArrowLink({
   children,
-  href = "/contact",
+  href = "/option-1/contact",
 }: {
   children: React.ReactNode;
   href?: string;
@@ -30,7 +31,11 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <Link className="wordmark" to="/option-1" aria-label="Jeannette Mills home">
+        <Link
+          className="wordmark"
+          to="/option-1"
+          aria-label="Jeannette Mills home"
+        >
           <span>Jeannette</span>
           <strong>Mills</strong>
         </Link>
@@ -43,16 +48,16 @@ export default function Home() {
           {menuOpen ? <X size={24} /> : <Menu size={25} />}
         </button>
         <nav className={menuOpen ? "open" : ""} aria-label="Primary navigation">
-          <a href="/about" onClick={closeMenu}>
+          <a href="/option-1/about" onClick={closeMenu}>
             About
           </a>
-          <a href="/work-with-jeannette" onClick={closeMenu}>
+          <a href="/option-1/work-with-jeannette" onClick={closeMenu}>
             Work With Jeannette
           </a>
-          <a href="/books" onClick={closeMenu}>
+          <a href="/option-1/books" onClick={closeMenu}>
             Books
           </a>
-          <a href="/contact" onClick={closeMenu}>
+          <a href="/option-1/contact" onClick={closeMenu}>
             Contact
           </a>
         </nav>
@@ -94,7 +99,7 @@ export default function Home() {
         </div>
         <div className="intro-content">
           <div className="intro-image">
-          <img src={gardenPortrait} alt="Jeannette Mills" />
+            <img src={gardenPortrait} alt="Jeannette Mills" />
           </div>
           <p className="eyebrow">Leadership is personal</p>
           <h2>
@@ -122,7 +127,10 @@ export default function Home() {
 
       <section className="experience section">
         <div className="experience-image">
-          <img src={baltimorePolytech} alt="Jeannette Mills at Baltimore Polytechnic Institute" />
+          <img
+            src={baltimorePolytech}
+            alt="Jeannette Mills at Baltimore Polytechnic Institute"
+          />
         </div>
         <div className="experience-copy">
           <p className="eyebrow">A career of consequence</p>
@@ -145,7 +153,9 @@ export default function Home() {
             leadership teams, and professionals who understand that stronger
             leadership creates stronger organizations.
           </p>
-          <ArrowLink href="/work-with-jeannette">Work with Jeannette</ArrowLink>
+          <ArrowLink href="/option-1/work-with-jeannette">
+            Work with Jeannette
+          </ArrowLink>
         </div>
       </section>
 
@@ -207,15 +217,23 @@ export default function Home() {
               Stories, reflection, and application designed to help individuals
               and organizations turn leadership insight into action.
             </p>
-            <ArrowLink href="/books">Explore products</ArrowLink>
+            <ArrowLink href="/option-1/books">Explore products</ArrowLink>
           </article>
         </div>
       </section>
 
       <section className="books section" id="books">
         <div className="book-visuals">
-          <img className="book-mockup tomme-mockup" src={tommesGirlMockup} alt="Tomme's Girl by Jeannette Mills" />
-          <img className="book-mockup workbook-mockup" src={leadBoldlyMockup} alt="LEAD BOLDLY Leadership Workbook by Jeannette Mills" />
+          <img
+            className="book-mockup tomme-mockup"
+            src={tommesGirlMockup}
+            alt="Tomme's Girl by Jeannette Mills"
+          />
+          <img
+            className="book-mockup workbook-mockup"
+            src={leadBoldlyMockup}
+            alt="LEAD BOLDLY Leadership Workbook by Jeannette Mills"
+          />
         </div>
         <div className="books-copy">
           <p className="eyebrow">The story behind the work</p>
@@ -238,7 +256,7 @@ export default function Home() {
             Together, they create more than a memoir. They create a leadership
             development experience.
           </p>
-          <ArrowLink href="/books">Discover the collection</ArrowLink>
+          <ArrowLink href="/option-1/books">Discover the collection</ArrowLink>
         </div>
       </section>
 
