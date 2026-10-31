@@ -54,6 +54,7 @@ BOOK A CONSULTATION
 ## Photos - use throughout
 
 Available photos:
+
 - 84e2e115-4309-41fc-aae9-7977f1c20f56.png: Image of "Lead Boldly leadership workbook" book cover
 - fa4db57a-47c9-4635-94e7-28b2c883d6fd.png: Image of "Tomme's Girl" book cover
 - Tomme's Girl Book Mockup.png: Image of "Tomme's Girl" book visualization (the whole book, not just the cover image).
