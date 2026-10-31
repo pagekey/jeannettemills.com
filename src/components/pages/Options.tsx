@@ -6,10 +6,6 @@ export default function Options() {
   return (
     <main className="options-page">
       <section className="options-board">
-        <header className="options-header">
-          <span className="options-brand">PageKey</span>
-          <span>Website presentation / 01</span>
-        </header>
         <div className="options-intro">
           <p className="options-eyebrow">Jeannette Mills</p>
           <h1>
