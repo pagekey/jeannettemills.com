@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SiteFooter } from "@/components/ContentPageLayout";
 import "./option1.css";
 
 export default function NotFound() {
@@ -45,31 +46,7 @@ export default function NotFound() {
         </div>
       </section>
 
-      <footer>
-        <div className="footer-top">
-          <Link className="wordmark" to="/">
-            <span>Jeannette</span>
-            <strong>Mills</strong>
-          </Link>
-          <p>
-            Lead boldly. Develop people.
-            <br />
-            Build performance that lasts.
-          </p>
-        </div>
-        <div className="footer-links">
-          <Link to="/contact">Get in touch</Link>
-          <Link to="/about">About Jeannette</Link>
-          <Link to="/work-with-jeannette">Work with Jeannette</Link>
-          <Link to="/">Back to home <ArrowRight size={15} /></Link>
-        </div>
-        <div className="footer-bottom">
-          <span>&copy; {new Date().getFullYear()} Jeannette Mills. All rights reserved.</span>
-          <span>
-            Website by <a href="https://pagekey.io">PageKey</a>
-          </span>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

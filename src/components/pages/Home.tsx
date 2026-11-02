@@ -6,6 +6,7 @@ import baltimorePolytech from "@/assets/jeannette-baltimore-polytech.jpg";
 import gardenPortrait from "@/assets/jeannette-garden.jpg";
 import tommesGirlMockup from "@/assets/tommes-girl-mockup.png";
 import leadBoldlyMockup from "@/assets/lead-boldly-mockup.png";
+import { SiteFooter } from "@/components/ContentPageLayout";
 import "./option1.css";
 
 const consultationUrl = "/contact";
@@ -31,11 +32,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <Link
-          className="wordmark"
-          to=""
-          aria-label="Jeannette Mills home"
-        >
+        <Link className="wordmark" to="" aria-label="Jeannette Mills home">
           <span>Jeannette</span>
           <strong>Mills</strong>
         </Link>
@@ -153,9 +150,7 @@ export default function Home() {
             leadership teams, and professionals who understand that stronger
             leadership creates stronger organizations.
           </p>
-          <ArrowLink href="/work-with-jeannette">
-            Work with Jeannette
-          </ArrowLink>
+          <ArrowLink href="/work-with-jeannette">Work with Jeannette</ArrowLink>
         </div>
       </section>
 
@@ -282,35 +277,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer id="contact">
-        <div className="footer-top">
-          <Link className="wordmark" to="">
-            <span>Jeannette</span>
-            <strong>Mills</strong>
-          </Link>
-          <p>
-            Lead boldly. Develop people.
-            <br />
-            Build performance that lasts.
-          </p>
-        </div>
-        <div className="footer-links">
-          <a href={consultationUrl}>hello@jeannettemills.com</a>
-          <a href="#top">Instagram</a>
-          <a href="#top">LinkedIn</a>
-          <a href="">
-            Back to top <ArrowRight size={15} />
-          </a>
-        </div>
-        <div className="footer-bottom">
-          <span>
-            &copy; {new Date().getFullYear()} Jeannette Mills. All rights reserved.
-          </span>
-          <span>
-            Website by <a href="https://pagekey.io">PageKey</a>
-          </span>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

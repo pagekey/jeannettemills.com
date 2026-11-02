@@ -21,7 +21,7 @@ function SiteHeader() {
   );
 }
 
-function PageFooter() {
+export function SiteFooter() {
   return (
     <footer>
       <div className="footer-top">
@@ -29,28 +29,31 @@ function PageFooter() {
           <span>Jeannette</span>
           <strong>Mills</strong>
         </Link>
-        <p>
-          Lead boldly. Develop people.
-          <br />
-          Build performance that lasts.
-        </p>
+        <div className="footer-credentials">
+          <p>Executive Leadership Strategist</p>
+          <p>
+            Author of <em>Tomme’s Girl</em>, Creator of LEAD BOLDLY™, Speaker
+            &amp; Trainer
+          </p>
+        </div>
       </div>
       <div className="footer-links">
-        <Link to="/contact">Get in touch</Link>
-        <Link to="/about">About Jeannette</Link>
-        <Link to="/work-with-jeannette">Work with Jeannette</Link>
-        <Link to="/">
-          Option 1 home <ArrowRight size={15} />
+        <div className="footer-services">
+          <span>Leadership Development</span>
+          <span>Executive Coaching</span>
+          <span>Corporate Training</span>
+          <span>Keynotes</span>
+          <span>Books &amp; Leadership Tools</span>
+        </div>
+        <Link className="button button-dark" to="/contact">
+          Book a consultation <ArrowRight size={15} />
         </Link>
       </div>
       <div className="footer-bottom">
         <span>
-          &copy; {new Date().getFullYear()} Jeannette Mills. All rights
-          reserved.
+          <em>Tomme’s Girl</em> | LEAD BOLDLY™ Leadership Workbook
         </span>
-        <span>
-          Website by <a href="https://pagekey.io">PageKey</a>
-        </span>
+        <span>&copy; Jeannette Mills. All Rights Reserved.</span>
       </div>
     </footer>
   );
@@ -83,7 +86,7 @@ export function ContentPageLayout({ children }: { children: React.ReactNode }) {
     <>
       <SiteHeader />
       {children}
-      <PageFooter />
+      <SiteFooter />
     </>
   );
 }
