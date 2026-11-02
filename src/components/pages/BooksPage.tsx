@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import baltimorePolytech from "@/assets/jeannette-baltimore-polytech.jpg";
-import leadBoldlyMockup from "@/assets/lead-boldly-mockup.png";
+import booksPortrait from "@/assets/JeanetteMills-Finals-23.jpg";
+// import leadBoldlyMockup from "@/assets/lead-boldly-mockup.png";
 import tommesGirlMockup from "@/assets/tommes-girl-mockup.png";
 import { ContentPageLayout, PageIntro } from "@/components/ContentPageLayout";
 
@@ -15,8 +15,8 @@ export default function BooksPage() {
             From <em>Tomme’s Girl</em> to leading boldly.
           </>
         }
-        image={baltimorePolytech}
-        alt="Jeannette Mills at Baltimore Polytechnic Institute"
+        image={booksPortrait}
+        alt="Jeannette Mills holding a copy of Tomme's Girl"
       />
       <section className="book-page-grid">
         <div>
@@ -44,6 +44,7 @@ export default function BooksPage() {
           </Link>
         </div>
       </section>
+      {/*
       <section className="book-page-grid workbook-page">
         <div>
           <p className="eyebrow">LEAD BOLDLY(TM) Workbook</p>
@@ -70,6 +71,7 @@ export default function BooksPage() {
           />
         </div>
       </section>
+      */}
     </ContentPageLayout>
   );
 }
