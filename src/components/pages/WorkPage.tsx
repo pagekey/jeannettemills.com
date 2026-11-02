@@ -18,7 +18,7 @@ export default function WorkPage() {
       />
       <section className="detail-section detail-split">
         <div className="detail-label">
-          <span>02</span> How we work
+          <span>02</span> My work
         </div>
         <div>
           <p className="lead-copy">
@@ -40,44 +40,19 @@ export default function WorkPage() {
           </p>
         </div>
       </section>
-      <section className="service-detail-grid">
+      <section className="service-detail-grid service-detail-grid-single">
         <article>
-          <span>01</span>
           <h2>
             Leadership
             <br />
-            Training
+            Training &amp; Speaking
           </h2>
           <p>
             Customized leadership development experiences for organizations,
             leadership teams, and professionals who want practical strategies
-            they can immediately apply.
-          </p>
-        </article>
-        <article>
-          <span>02</span>
-          <h2>
-            Keynotes &amp;
-            <br />
-            Speaking
-          </h2>
-          <p>
-            Insightful, candid, and practical conversations about leadership,
-            resilience, professional growth, navigating change, and the lessons
-            that shape exceptional leaders.
-          </p>
-        </article>
-        <article>
-          <span>03</span>
-          <h2>
-            Books &amp;
-            <br />
-            Leadership Tools
-          </h2>
-          <p>
-            <em>Tomme’s Girl</em> and the LEAD BOLDLY(TM) Leadership Workbook
-            combine lived experience, leadership lessons, reflection, and
-            application to turn insight into action.
+            they can immediately apply, alongside insightful, candid, and
+            practical speaking on leadership, resilience, professional growth,
+            navigating change, and the lessons that shape exceptional leaders.
           </p>
         </article>
       </section>
