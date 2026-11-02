@@ -1058,6 +1058,69 @@ footer {
 .contact-section .button {
   margin-top: 14px;
 }
+.contact-form {
+  display: grid;
+  gap: 18px;
+  margin-top: 35px;
+}
+.contact-form label {
+  color: var(--pine);
+  display: grid;
+  font-size: 0.82rem;
+  font-weight: 700;
+  gap: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.contact-form input,
+.contact-form textarea {
+  appearance: none;
+  background: transparent;
+  border: 1px solid #789087;
+  border-radius: 0;
+  color: var(--pine);
+  font:
+    1rem/1.5 Inter,
+    sans-serif;
+  padding: 12px 14px;
+  width: 100%;
+}
+.contact-form textarea {
+  resize: vertical;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--pine);
+  outline: 2px solid var(--pine);
+  outline-offset: 2px;
+}
+.contact-form-name-fields {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-form .button {
+  justify-self: start;
+}
+.contact-form .button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+.contact-form-note,
+.contact-form-status {
+  color: #3b504c;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.contact-form-note a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+}
+.contact-form-status {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 35px;
+}
 @media (max-width: 760px) {
   .o2-header {
     height: 70px;
@@ -1378,5 +1441,8 @@ footer {
   }
   .contact-section {
     padding: 75px 6vw;
+  }
+  .contact-form-name-fields {
+    grid-template-columns: 1fr;
   }
 }

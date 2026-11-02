@@ -1,5 +1,5 @@
-import { ArrowRight } from "lucide-react";
-import executivePortrait from "@/assets/jeannette-exec-portrait-2.jpg";
+import contactPortrait from "@/assets/JeanetteMills-Finals-160.jpg";
+import ContactForm from "@/components/ContactForm";
 import { ContentPageLayout, PageIntro } from "@/components/ContentPageLayout";
 
 export default function ContactPage() {
@@ -12,7 +12,7 @@ export default function ContactPage() {
             Ready to lead <em>more boldly?</em>
           </>
         }
-        image={executivePortrait}
+        image={contactPortrait}
         alt="Jeannette Mills"
       />
       <section className="contact-section">
@@ -37,12 +37,7 @@ export default function ContactPage() {
             people, and build a leadership culture capable of producing
             sustainable performance, the conversation starts here.
           </p>
-          <a
-            className="button button-dark"
-            href="mailto:hello@jeannettemills.com?subject=Consultation%20Inquiry"
-          >
-            Email Jeannette <ArrowRight size={18} />
-          </a>
+          <ContactForm />
         </div>
       </section>
     </ContentPageLayout>
