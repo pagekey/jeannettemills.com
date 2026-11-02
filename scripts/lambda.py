@@ -1,9 +1,11 @@
 import json
+import logging
 
 import boto3
 
 
 ses = boto3.client("ses", region_name="us-east-1")
+logger = logging.getLogger(__name__)
 
 CORS_HEADERS = {
     "Access-Control-Allow-Origin": "*",
@@ -49,7 +51,9 @@ def lambda_handler(event, context):
     try:
         ses.send_email(
             Source="no-reply@pagekey.io",
-            Destination={"ToAddresses": ["newsletter@pagekey.io"]},
+            Destination={
+                "ToAddresses": ["newsletter@pagekey.io", "boldgirlboss@gmail.com"]
+            },
             Message={
                 "Subject": {"Data": "New Jeannette Mills contact form submission"},
                 "Body": {
@@ -64,6 +68,7 @@ def lambda_handler(event, context):
             },
         )
     except Exception:
+        logger.exception("SES send_email failed")
         return response(500, {"message": "Failed to send message"})
 
     return response(200, {"message": "Message sent"})
