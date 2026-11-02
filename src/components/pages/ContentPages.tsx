@@ -9,17 +9,17 @@ import tommesGirlMockup from "@/assets/tommes-girl-mockup.png";
 function SiteHeader() {
   return (
     <header className="site-header content-header">
-      <Link className="wordmark" to="/option-1">
+      <Link className="wordmark" to="/">
         <span>Jeannette</span>
         <strong>Mills</strong>
       </Link>
       <nav>
-        <Link to="/option-1/about">About</Link>
-        <Link to="/option-1/work-with-jeannette">Work With Jeannette</Link>
-        <Link to="/option-1/books">Books</Link>
-        <Link to="/option-1/contact">Contact</Link>
+        <Link to="/about">About</Link>
+        <Link to="/work-with-jeannette">Work With Jeannette</Link>
+        <Link to="/books">Books</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
-      <Link className="header-cta" to="/option-1/contact">
+      <Link className="header-cta" to="/contact">
         Book a consultation <ArrowRight size={15} />
       </Link>
     </header>
@@ -52,7 +52,7 @@ function PageFooter() {
   return (
     <footer>
       <div className="footer-top">
-        <Link className="wordmark" to="/option-1">
+        <Link className="wordmark" to="/">
           <span>Jeannette</span>
           <strong>Mills</strong>
         </Link>
@@ -63,10 +63,10 @@ function PageFooter() {
         </p>
       </div>
       <div className="footer-links">
-        <Link to="/option-1/contact">Get in touch</Link>
-        <Link to="/option-1/about">About Jeannette</Link>
-        <Link to="/option-1/work-with-jeannette">Work with Jeannette</Link>
-        <Link to="/option-1">
+        <Link to="/contact">Get in touch</Link>
+        <Link to="/about">About Jeannette</Link>
+        <Link to="/work-with-jeannette">Work with Jeannette</Link>
+        <Link to="/">
           Option 1 home <ArrowRight size={15} />
         </Link>
       </div>
