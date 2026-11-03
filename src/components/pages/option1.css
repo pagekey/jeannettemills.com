@@ -458,6 +458,81 @@ a {
   letter-spacing: 0.1em;
 }
 
+.book-banner {
+  align-items: center;
+  background: var(--ochre);
+  color: var(--ink);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  min-height: 46px;
+  overflow: hidden;
+  padding: 0 5vw;
+}
+
+.book-banner-message {
+  overflow: hidden;
+}
+
+.book-banner-track {
+  align-items: center;
+  animation: book-banner-scroll 18s linear infinite;
+  display: flex;
+  gap: 48px;
+  min-width: max-content;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  white-space: nowrap;
+}
+
+.book-banner-track span::before {
+  color: var(--clay);
+  content: "•";
+  margin-right: 48px;
+}
+
+.book-banner-link {
+  align-items: center;
+  border-left: 1px solid #162d2a66;
+  display: flex;
+  font-size: 10px;
+  font-weight: 750;
+  gap: 7px;
+  letter-spacing: 0.11em;
+  margin-left: 25px;
+  padding: 14px 25px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.book-banner-link:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.book-banner-dismiss {
+  align-items: center;
+  align-self: stretch;
+  background: transparent;
+  border: 0;
+  border-left: 1px solid #162d2a66;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  padding: 0 0 0 17px;
+}
+
+.book-banner-dismiss:hover {
+  color: var(--clay);
+}
+
+@keyframes book-banner-scroll {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
 .site-header {
   height: 80px;
   display: flex;
@@ -1767,5 +1842,35 @@ footer {
 
   .contact-form-name-fields {
     grid-template-columns: 1fr;
+  }
+
+  .book-banner {
+    min-height: 42px;
+    padding: 0 6vw;
+  }
+
+  .book-banner-track {
+    font-size: 8px;
+    gap: 28px;
+  }
+
+  .book-banner-track span::before {
+    margin-right: 28px;
+  }
+
+  .book-banner-link {
+    font-size: 9px;
+    margin-left: 12px;
+    padding: 12px;
+  }
+
+  .book-banner-dismiss {
+    padding-left: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .book-banner-track {
+    animation: none;
   }
 }

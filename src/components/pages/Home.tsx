@@ -26,11 +26,46 @@ function ArrowLink({
 }
 
 export default function Home() {
+  const [bookBannerVisible, setBookBannerVisible] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
 
   return (
     <main>
+      {bookBannerVisible && (
+        <aside className="book-banner" aria-label="Tomme's Girl announcement">
+          <div className="book-banner-message" aria-hidden="true">
+            <Link to="/books" target="_blank">
+              <div className="book-banner-track">
+                <span>Tomme's Girl is available now</span>
+                <span>Read the story behind the leader</span>
+                <span>Tomme's Girl is available now</span>
+                <span>Read the story behind the leader</span>
+                <span>Tomme's Girl is available now</span>
+                <span>Read the story behind the leader</span>
+                <span>Tomme's Girl is available now</span>
+                <span>Read the story behind the leader</span>
+              </div>
+            </Link>
+          </div>
+          <Link
+            className="book-banner-link"
+            to="/books"
+            aria-label="Buy Tomme's Girl now"
+            target="_blank"
+          >
+            Buy now <ArrowRight aria-hidden="true" size={15} />
+          </Link>
+          <button
+            className="book-banner-dismiss"
+            type="button"
+            aria-label="Dismiss Tomme's Girl announcement"
+            onClick={() => setBookBannerVisible(false)}
+          >
+            <X aria-hidden="true" size={18} />
+          </button>
+        </aside>
+      )}
       <header className="site-header">
         <Link className="wordmark" to="" aria-label="Jeannette Mills home">
           <span>Jeannette</span>
