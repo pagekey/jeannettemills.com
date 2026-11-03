@@ -948,6 +948,11 @@ h2 em {
   color: #3b3022;
 }
 
+.books-coming-soon {
+  font-size: 12px;
+  margin: 18px 0 0;
+}
+
 .organization {
   background: var(--pine);
   color: var(--cream);

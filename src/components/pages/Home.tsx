@@ -276,8 +276,8 @@ export default function Home() {
           </p>
           <p>
             <em>Tomme's Girl</em> tells the story behind the leader. The{" "}
-            <strong>LEAD BOLDLY™</strong>
-            <sup>TM</sup> Leadership Workbook turns those lessons into practical
+            <strong>LEAD BOLDLY™ </strong>
+            Leadership Workbook* turns those lessons into practical
             principles leaders can examine and apply.
           </p>
           <p className="books-statement">
@@ -285,6 +285,7 @@ export default function Home() {
             development experience.
           </p>
           <ArrowLink href="/books">Discover the collection</ArrowLink>
+          <p className="books-coming-soon pt-4">* Coming soon</p>
         </div>
       </section>
 
