@@ -19,7 +19,7 @@ Her work is grounded in a simple principle: leadership is not only about what yo
 Today, Jeannette brings those lessons directly to organizations, leadership teams, and professionals who understand that stronger leadership creates stronger organizations.
 BOOK A CONSULTATION
 
-### LEADERSHIP DEVELOPMENT BUILT FOR THE REAL WORLD
+### LEADERSHIP DEVELOPMENT BUILT FOR TODAY's WORLD
 
 Leadership becomes most important when circumstances become difficult.
 Organizations need leaders who can communicate clearly, make sound decisions, navigate change, build trust, manage competing priorities, develop talent, and maintain performance without losing sight of the people responsible for producing the results.

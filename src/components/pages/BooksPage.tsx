@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import booksPortrait from "@/assets/JeanetteMills-Finals-23.jpg";
+import booksPortrait from "@/assets/JeanetteMills-Finals-92.jpg";
 // import leadBoldlyMockup from "@/assets/lead-boldly-mockup.png";
 import tommesGirlMockup from "@/assets/tommes-girl-mockup.png";
 import { ContentPageLayout, PageIntro } from "@/components/ContentPageLayout";
@@ -12,7 +12,7 @@ export default function BooksPage() {
         eyebrow="Stories that shape leaders"
         title={
           <>
-            From <em>Tomme’s Girl</em> to leading boldly.
+            From <em>Tomme’s Girl</em> to Lead Boldly™.
           </>
         }
         image={booksPortrait}

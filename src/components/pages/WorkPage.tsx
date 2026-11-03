@@ -48,11 +48,8 @@ export default function WorkPage() {
             Training &amp; Speaking
           </h2>
           <p>
-            Customized leadership development experiences for organizations,
-            leadership teams, and professionals who want practical strategies
-            they can immediately apply, alongside insightful, candid, and
-            practical speaking on leadership, resilience, professional growth,
-            navigating change, and the lessons that shape exceptional leaders.
+            Customized leadership development experiences for organizations, leadership teams, and professionals who want practical strategies they can immediately apply.
+            Alongside insightful, candid, and practical speaking on leadership, resilience, professional growth, navigating change, and the lessons that shape exceptional leaders.
           </p>
         </article>
       </section>
