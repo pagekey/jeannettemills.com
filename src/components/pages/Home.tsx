@@ -295,15 +295,15 @@ export default function Home() {
           <span className="round-mark">JM</span>
         </div>
         <h2>
-          Bring <em>Lead Boldly™</em>
+          Bring <em>Lead Boldly</em>™
           to your organization.
         </h2>
         <div className="organization-bottom">
           <p>
             Leadership development should produce more than an inspiring
             afternoon. Jeannette creates conversations that continue after the
-            training ends, customized around your organization's priorities,
-            challenges, and people.
+            training ends, customized around your organization's people,
+            priorities, and challenges.
           </p>
           <a className="button button-light" href={consultationUrl}>
             Book a consultation <ArrowRight size={18} />
