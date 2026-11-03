@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import baltimorePolytech from "@/assets/jeannette-baltimore-polytech.jpg";
-import executivePortrait from "@/assets/jeannette-exec-portrait-2.jpg";
+import aboutPortrait from "@/assets/JeanetteMills-Finals-87.jpg";
 import tommesGirlMockup from "@/assets/tommes-girl-mockup.png";
 import { ContentPageLayout, PageIntro } from "@/components/ContentPageLayout";
 
@@ -19,8 +19,9 @@ export default function AboutPage() {
             Build performance that lasts.
           </>
         }
-        image={executivePortrait}
+        image={aboutPortrait}
         alt="Jeannette Mills"
+        imageClassName="about-intro-image"
       />
       <section className="detail-section detail-split">
         <div className="detail-label">

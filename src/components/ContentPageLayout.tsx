@@ -64,11 +64,13 @@ export function PageIntro({
   title,
   image,
   alt,
+  imageClassName,
 }: {
   eyebrow: string;
   title: React.ReactNode;
   image: string;
   alt: string;
+  imageClassName?: string;
 }) {
   return (
     <section className="page-intro">
@@ -76,7 +78,7 @@ export function PageIntro({
         <p className="eyebrow light">{eyebrow}</p>
         <h1>{title}</h1>
       </div>
-      <img src={image} alt={alt} />
+      <img className={imageClassName} src={image} alt={alt} />
     </section>
   );
 }

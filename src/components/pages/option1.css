@@ -1126,6 +1126,10 @@ footer {
   object-position: center 25%;
 }
 
+.page-intro img.about-intro-image {
+  object-position: center 60%;
+}
+
 .detail-section {
   padding: 120px 12vw;
 }
@@ -1764,6 +1768,12 @@ footer {
   .page-intro img {
     min-height: 290px;
     max-height: 380px;
+  }
+
+  .page-intro img.about-intro-image {
+    height: auto;
+    max-height: none;
+    min-height: 0;
   }
 
   .detail-section {
