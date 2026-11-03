@@ -94,7 +94,7 @@ export default function AboutPage() {
           <h2>
             Leadership Development Built for
             <br />
-            <em>the Real World.</em>
+            <em>Today's World.</em>
           </h2>
           <p className="lead-copy">
             Leadership becomes most important when circumstances become

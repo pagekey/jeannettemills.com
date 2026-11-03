@@ -193,7 +193,7 @@ export default function Home() {
             <span>02</span> How we work together
           </div>
           <div>
-            <p className="eyebrow">Built for the real world</p>
+            <p className="eyebrow">Built for today's world</p>
             <h2>
               Practical wisdom for
               <br />

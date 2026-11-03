@@ -10,7 +10,7 @@ export default function WorkPage() {
         eyebrow="Leadership development"
         title={
           <>
-            Built for <em>the real world.</em>
+            Built for <em>today's world.</em>
           </>
         }
         image={gardenPortrait}
