@@ -175,10 +175,8 @@ export default function Home() {
             <strong>matter.</strong>
           </p>
           <p>
-            Her leadership journey included serving in senior executive roles at
-            Tennessee Valley Authority, first as Executive Vice President and
-            Chief External Relations Officer and ultimately as Executive Vice
-            President and Chief Administrative Officer.
+            Her leadership journey included serving in senior executive roles at large public and private organizations.
+            Her work is grounded in a simple rule: leadership is not only about what you accomplish; it is also about your enduring impact on people throughout the journey.
           </p>
           <p>
             Today, she brings those lessons directly to organizations,
