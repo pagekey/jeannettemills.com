@@ -43,6 +43,7 @@ def lambda_handler(event, context):
     email = str(body.get("email", "")).strip()
     first_name = str(metadata.get("firstName", "")).strip()
     last_name = str(metadata.get("lastName", "")).strip()
+    company = str(metadata.get("company", "")).strip()
     comments = str(metadata.get("comments", "")).strip()
 
     if not all((email, first_name, last_name, comments)):
@@ -60,6 +61,7 @@ def lambda_handler(event, context):
                     "Text": {
                         "Data": (
                             f"Name: {first_name} {last_name}\n"
+                            f"Company or Organization: {company or 'Not provided'}\n"
                             f"Email: {email}\n\n"
                             f"Comments:\n{comments}"
                         )

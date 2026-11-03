@@ -30,6 +30,7 @@ export default function ContactForm() {
           metadata: {
             firstName: formData.get("firstName"),
             lastName: formData.get("lastName"),
+            company: formData.get("company"),
             comments: formData.get("comments"),
           },
         }),
@@ -61,11 +62,15 @@ export default function ContactForm() {
         </label>
       </div>
       <label>
+        Company or Organization
+        <input name="company" autoComplete="organization" />
+      </label>
+      <label>
         Email address
         <input name="email" type="email" autoComplete="email" required />
       </label>
       <label>
-        Comments
+        How can we help?
         <textarea name="comments" rows={5} required />
       </label>
       <button
