@@ -103,7 +103,7 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow light">Leadership is a practice</p>
             <h1>
-              Lead boldly.
+              Lead boldly.™
               <br />
               <em>Build what lasts.</em>
             </h1>
@@ -262,7 +262,7 @@ export default function Home() {
           <img
             className="book-mockup workbook-mockup"
             src={leadBoldlyMockup}
-            alt="LEAD BOLDLY Leadership Workbook by Jeannette Mills"
+            alt="LEAD BOLDLY™ Leadership Workbook by Jeannette Mills"
           />
         </div>
         <div className="books-copy">
@@ -278,7 +278,7 @@ export default function Home() {
           </p>
           <p>
             <em>Tomme's Girl</em> tells the story behind the leader. The{" "}
-            <strong>LEAD BOLDLY</strong>
+            <strong>LEAD BOLDLY™</strong>
             <sup>TM</sup> Leadership Workbook turns those lessons into practical
             principles leaders can examine and apply.
           </p>
@@ -296,8 +296,8 @@ export default function Home() {
           <span className="round-mark">JM</span>
         </div>
         <h2>
-          Bring <em>Lead Boldly</em>
-          <sup>TM</sup> to your organization.
+          Bring <em>Lead Boldly™</em>
+          to your organization.
         </h2>
         <div className="organization-bottom">
           <p>

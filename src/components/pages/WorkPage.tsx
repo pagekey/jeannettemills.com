@@ -57,7 +57,7 @@ export default function WorkPage() {
         </article>
       </section>
       <section className="organization work-cta">
-        <p className="eyebrow">Bring Lead Boldly to your organization</p>
+        <p className="eyebrow">Bring Lead Boldly™ to your organization</p>
         <h2>
           Conversations that continue <em>after the training ends.</em>
         </h2>

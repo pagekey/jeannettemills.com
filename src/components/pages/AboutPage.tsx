@@ -12,7 +12,7 @@ export default function AboutPage() {
         eyebrow="Leadership is a practice"
         title={
           <>
-            Lead boldly.
+            Lead boldly.™
             <br />
             Develop people.
             <br />

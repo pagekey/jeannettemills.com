@@ -6,7 +6,7 @@ Main purpose of website: launch book & sell books/consultations.
 
 ### HOME PAGE
 
-LEAD BOLDLY. DEVELOP PEOPLE. BUILD PERFORMANCE THAT LASTS.
+LEAD BOLDLY™. DEVELOP PEOPLE. BUILD PERFORMANCE THAT LASTS.
 Leadership is not simply about holding a position. It is about how you influence people, navigate difficult moments, make decisions, build trust, and create environments where others can succeed.
 Jeannette Mills brings decades of executive leadership experience, organizational insight, and lived wisdom to leaders and organizations ready to strengthen how they lead people and performance. Through executive training, leadership development, speaking, coaching, and the principles introduced in Tomme’s Girl and the LEAD BOLDLY™ Leadership Workbook, Jeannette helps leaders move beyond managing responsibilities to leading with greater clarity, confidence, accountability, and impact.
 BOOK A CONSULTATION
@@ -55,10 +55,10 @@ BOOK A CONSULTATION
 
 Available photos:
 
-- 84e2e115-4309-41fc-aae9-7977f1c20f56.png: Image of "Lead Boldly leadership workbook" book cover
+- 84e2e115-4309-41fc-aae9-7977f1c20f56.png: Image of "Lead Boldly™ leadership workbook" book cover
 - fa4db57a-47c9-4635-94e7-28b2c883d6fd.png: Image of "Tomme's Girl" book cover
 - Tomme's Girl Book Mockup.png: Image of "Tomme's Girl" book visualization (the whole book, not just the cover image).
-- Workbook MockUp.png: Image of "Lead Boldly leadership workbook" book visualization (the whole book, not just the cover image).
+- Workbook MockUp.png: Image of "Lead Boldly™ leadership workbook" book visualization (the whole book, not just the cover image).
 - JeanetteMills-Finals-1.jpg: photo of plaque showing "Jeannette M. Mills, Executive Leader, Advocate, 2022, '84" on wall.
 - JeanetteMills-Finals-6.jpg: Jeannette posing in front of plaque wall in hallway of school.
 - JeanetteMills-Finals-7.jpg, JeanetteMills-Finals-8.jpg: Similar

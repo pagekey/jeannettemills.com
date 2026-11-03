@@ -27,7 +27,7 @@ export default function ContactPage() {
           <p>
             Jeannette works with organizations to create conversations that
             continue after the training ends. Training may also incorporate{" "}
-            <em>Tomme’s Girl</em> and the LEAD BOLDLY(TM) Leadership Workbook to
+            <em>Tomme’s Girl</em> and the LEAD BOLDLY™ Leadership Workbook to
             create an integrated learning experience that allows participants to
             read, reflect, discuss, and apply the principles long after the
             session concludes.

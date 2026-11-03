@@ -47,12 +47,12 @@ export default function BooksPage() {
       {/*
       <section className="book-page-grid workbook-page">
         <div>
-          <p className="eyebrow">LEAD BOLDLY(TM) Workbook</p>
+          <p className="eyebrow">LEAD BOLDLY™ Workbook</p>
           <h2>
             Turn insight into <em>action.</em>
           </h2>
           <p>
-            LEAD BOLDLY(TM) takes the leadership lessons within that story and
+            LEAD BOLDLY™ takes the leadership lessons within that story and
             turns them into practical principles leaders can examine and apply
             within their own lives, teams, and organizations.
           </p>
@@ -67,7 +67,7 @@ export default function BooksPage() {
         <div>
           <img
             src={leadBoldlyMockup}
-            alt="LEAD BOLDLY Leadership Workbook by Jeannette Mills"
+            alt="LEAD BOLDLY™ Leadership Workbook by Jeannette Mills"
           />
         </div>
       </section>
