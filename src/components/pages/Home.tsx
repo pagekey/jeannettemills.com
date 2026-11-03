@@ -2,7 +2,7 @@ import { ArrowDownRight, ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import executivePortrait from "@/assets/jeannette-exec-portrait-1.jpg";
-import baltimorePolytech from "@/assets/jeannette-baltimore-polytech.jpg";
+import careerPortrait from "@/assets/JeanetteMills-Finals-23.jpg";
 import gardenPortrait from "@/assets/jeannette-garden.jpg";
 import tommesGirlMockup from "@/assets/tommes-girl-mockup.png";
 import leadBoldlyMockup from "@/assets/lead-boldly-mockup.png";
@@ -160,8 +160,8 @@ export default function Home() {
       <section className="experience section">
         <div className="experience-image">
           <img
-            src={baltimorePolytech}
-            alt="Jeannette Mills at Baltimore Polytechnic Institute"
+            src={careerPortrait}
+            alt="Jeannette Mills holding a copy of Tomme's Girl"
           />
         </div>
         <div className="experience-copy">
