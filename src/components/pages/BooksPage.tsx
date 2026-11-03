@@ -40,7 +40,7 @@ export default function BooksPage() {
             <em>Tomme’s Girl</em> tells the story behind the leader.
           </p>
           <Link className="button button-dark" to="/contact">
-            Purchase information <ArrowRight size={18} />
+            Buy the book <ArrowRight size={18} />
           </Link>
         </div>
       </section>
@@ -61,7 +61,7 @@ export default function BooksPage() {
             create a leadership development experience.
           </p>
           <Link className="button button-light" to="/contact">
-            Purchase information <ArrowRight size={18} />
+            Buy the book <ArrowRight size={18} />
           </Link>
         </div>
         <div>

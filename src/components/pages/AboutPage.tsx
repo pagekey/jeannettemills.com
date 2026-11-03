@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import baltimorePolytech from "@/assets/jeannette-baltimore-polytech.jpg";
+import leadershipImpactPortrait from "@/assets/JeanetteMills-Finals-9.jpg";
 import aboutPortrait from "@/assets/JeanetteMills-Finals-87.jpg";
 import tommesGirlMockup from "@/assets/tommes-girl-mockup.png";
 import { ContentPageLayout, PageIntro } from "@/components/ContentPageLayout";
@@ -38,7 +38,7 @@ export default function AboutPage() {
             organizational insight, and lived wisdom to leaders and
             organizations ready to strengthen how they lead people and
             performance. Through executive training, leadership development,
-            speaking, coaching, and the principles introduced in{" "}
+            speaking, coaching, and the principles in{" "}
             <em>Tomme’s Girl</em> and the LEAD BOLDLY™ Leadership Workbook,
             Jeannette helps leaders move beyond managing responsibilities to
             leading with greater clarity, confidence, accountability, and
@@ -51,8 +51,8 @@ export default function AboutPage() {
       </section>
       <section className="detail-section story-section">
         <img
-          src={baltimorePolytech}
-          alt="Jeannette Mills at Baltimore Polytechnic Institute"
+          src={leadershipImpactPortrait}
+          alt="Jeannette Mills"
         />
         <div>
           <h2>
@@ -64,16 +64,12 @@ export default function AboutPage() {
             <strong>matter.</strong>
           </p>
           <p>
-            Her leadership journey ultimately included serving in senior
-            executive roles at Tennessee Valley Authority, beginning her tenure
-            as the Executive Vice President and Chief External Relations Officer
-            ultimately becoming the Executive Vice President and Chief
-            Administrative Officer. Her experience extends beyond the executive
+            Her leadership journey included serving in senior executive roles at large public and private organizations. Her experience extends beyond the executive
             suite through corporate and nonprofit board service, mentoring,
             speaking, and the development of emerging and established leaders.
           </p>
           <p>
-            Her work is grounded in a simple principle: leadership is not only
+            Her work is grounded in a simple rule: leadership is not only
             about what you accomplish; it is also about your enduring impact on
             people throughout the journey.
           </p>
@@ -176,11 +172,7 @@ export default function AboutPage() {
             From <em>Tomme's Girl</em> to Leading Boldly.
           </h2>
           <p>
-            Long before Jeannette Mills became a senior executive, she was
-            Tomme’s girl. Her story began with humble roots and grew into a
-            career marked by achievement, difficult decisions, persistence,
-            leadership, and lessons that could never have been learned from a
-            textbook alone.
+            Long before Jeannette Mills became a senior executive, she was Tomme’s girl. Her story began on the rough streets of Baltimore where survival was not guaranteed. By imaginign a future beyond her circustances, Jeannette developed leadeership skills and principles that guided her into the life she'd always dreamed of, but with twists and turns she could not have anticipated.
           </p>
           <p>
             <em>Tomme’s Girl</em> tells the story behind the leader. LEAD
