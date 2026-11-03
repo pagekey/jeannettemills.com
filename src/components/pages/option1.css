@@ -810,9 +810,7 @@ h2 em {
 }
 
 .experience-copy strong {
-  color: var(--clay);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-weight: 700;
 }
 
 .arrow-link {
@@ -1164,12 +1162,7 @@ footer {
 }
 
 .lead-copy strong {
-  color: var(--clay);
-  font:
-    650 11px "Inter Variable",
-    sans-serif;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .quote-panel {
