@@ -176,7 +176,7 @@ export default function AboutPage() {
             <span className="book-title">Lead Boldly™</span>.
           </h2>
           <p>
-            Long before Jeannette Mills became a senior executive, she was Tomme's girl. Her story began on the streets of Baltimore where survival was not guaranteed. By imagining a future beyond her circustances, Jeannette developed leadership skills and principles to create the life she'd always dreamed of with a few unexpected twists and turns.
+            Long before Jeannette Mills became a senior executive, she was Tomme's girl. Her story began on the streets of Baltimore where survival was not guaranteed. By imagining a future beyond her circumstances, Jeannette developed leadership skills and principles to create the life she'd always dreamed of with a few unexpected twists and turns.
           </p>
           <p>&nbsp;</p>
           <p>
