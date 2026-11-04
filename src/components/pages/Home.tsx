@@ -1,6 +1,6 @@
 import { ArrowDownRight, ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import executivePortrait from "@/assets/jeannette-exec-portrait-1.jpg";
 import careerPortrait from "@/assets/JeanetteMills-Finals-23.jpg";
 import gardenPortrait from "@/assets/jeannette-garden.jpg";
@@ -80,18 +80,18 @@ export default function Home() {
           {menuOpen ? <X size={24} /> : <Menu size={25} />}
         </button>
         <nav className={menuOpen ? "open" : ""} aria-label="Primary navigation">
-          <a href="/about" onClick={closeMenu}>
+          <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/about" onClick={closeMenu}>
             About
-          </a>
-          <a href="/work-with-jeannette" onClick={closeMenu}>
+          </NavLink>
+          <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/work-with-jeannette" onClick={closeMenu}>
             Work With Jeannette
-          </a>
-          <a href="/books" onClick={closeMenu}>
+          </NavLink>
+          <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/books" onClick={closeMenu}>
             Books
-          </a>
-          <a href="/contact" onClick={closeMenu}>
+          </NavLink>
+          <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/contact" onClick={closeMenu}>
             Contact
-          </a>
+          </NavLink>
         </nav>
         <a className="header-cta" href={consultationUrl}>
           Book a consultation <ArrowRight size={15} />
@@ -103,7 +103,7 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow light">Leadership is a practice</p>
             <h1>
-              Lead boldly.™
+              Lead Boldly<span style={{ fontWeight: "50%" }}>™</span>.
               <br />
               <em>Build what lasts.</em>
             </h1>
@@ -242,8 +242,7 @@ export default function Home() {
               Leadership Tools
             </h3>
             <p>
-              Stories, reflection, and application designed to help individuals
-              and organizations turn leadership insight into action.
+              Tomme's Girl and the Lead Boldly™ Leadership Workbook combine lived experience, leadership lessons, reflection, and application to help individuals and organizations turn insight into action.
             </p>
             <ArrowLink href="/books">Explore products</ArrowLink>
           </article>
@@ -266,7 +265,8 @@ export default function Home() {
         <div className="books-copy">
           <p className="eyebrow">The story behind the work</p>
           <h2>
-            From <em>Tomme's Girl</em> to leading boldly.
+            From <em className="book-title">Tomme's Girl</em> to{" "}
+            <span className="book-title">Lead Boldly™</span>.
           </h2>
           <p>
             Long before Jeannette Mills became a senior executive, she was
@@ -285,17 +285,17 @@ export default function Home() {
             development experience.
           </p>
           <ArrowLink href="/books">Discover the collection</ArrowLink>
-          <p className="books-coming-soon pt-4">* Coming soon</p>
+          <p className="books-coming-soon pt-8 text-right">* Coming soon</p>
         </div>
       </section>
 
       <section className="organization section">
         <div className="organization-top">
           <p className="eyebrow">For organizations ready to grow</p>
-          <span className="round-mark">JM</span>
+          {/* <span className="round-mark">JM</span> */}
         </div>
         <h2>
-          Bring <em>Lead Boldly</em>™
+          Bring <span className="book-title"><em>Lead Boldly</em>™</span>{" "}
           to your organization.
         </h2>
         <div className="organization-bottom">

@@ -1,18 +1,30 @@
-import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ArrowRight, Menu, X } from "lucide-react";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function SiteHeader() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    <header className="site-header content-header">
+    <header className="site-header">
       <Link className="wordmark" to="/">
         <span>Jeannette</span>
         <strong>Mills</strong>
       </Link>
-      <nav>
-        <Link to="/about">About</Link>
-        <Link to="/work-with-jeannette">Work With Jeannette</Link>
-        <Link to="/books">Books</Link>
-        <Link to="/contact">Contact</Link>
+      <button
+        className="menu-button"
+        aria-label="Toggle navigation"
+        aria-expanded={menuOpen}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <X size={24} /> : <Menu size={25} />}
+      </button>
+      <nav className={menuOpen ? "open" : ""} aria-label="Primary navigation">
+        <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/about" onClick={closeMenu}>About</NavLink>
+        <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/work-with-jeannette" onClick={closeMenu}>Work With Jeannette</NavLink>
+        <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/books" onClick={closeMenu}>Books</NavLink>
+        <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/contact" onClick={closeMenu}>Contact</NavLink>
       </nav>
       <Link className="header-cta" to="/contact">
         Book a consultation <ArrowRight size={15} />

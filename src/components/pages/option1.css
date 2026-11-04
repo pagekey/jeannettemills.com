@@ -464,7 +464,7 @@ a {
   color: var(--ink);
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto auto;
-  min-height: 46px;
+  min-height: 54px;
   overflow: hidden;
   padding: 0 5vw;
 }
@@ -480,9 +480,11 @@ a {
   gap: 48px;
   min-width: max-content;
   text-transform: uppercase;
-  font-size: 10px;
+  color: var(--cream);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
   font-weight: 700;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.04em;
   white-space: nowrap;
 }
 
@@ -568,6 +570,10 @@ nav {
 nav a:hover,
 .footer-links a:hover {
   color: var(--clay);
+}
+
+nav a.active {
+  font-weight: 700;
 }
 
 .header-cta {
@@ -835,8 +841,13 @@ h2 em {
 }
 
 .services-heading {
+  align-items: start;
   display: grid;
   grid-template-columns: 22% 1fr;
+}
+
+.services h2 {
+  font-size: clamp(3.25rem, 5.6vw, 6.2rem);
 }
 
 .services-intro {
@@ -949,8 +960,8 @@ h2 em {
 }
 
 .books-coming-soon {
-  font-size: 12px;
-  margin: 18px 0 0;
+  font-size: 16px;
+  margin: 0;
 }
 
 .organization {
@@ -1117,6 +1128,15 @@ footer {
   line-height: 1;
 }
 
+.book-title {
+  white-space: nowrap;
+}
+
+.book-page-title {
+  display: block;
+  line-height: 1.08;
+}
+
 .page-intro img {
   width: 100%;
   height: 100%;
@@ -1128,6 +1148,16 @@ footer {
 
 .page-intro img.about-intro-image {
   object-position: center 60%;
+}
+
+@media (min-width: 761px) and (max-width: 1650px) {
+  .page-intro {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  .page-intro h1 {
+    font-size: clamp(2.75rem, 5vw, 5rem);
+  }
 }
 
 .detail-section {
@@ -1200,9 +1230,8 @@ footer {
 
 .story-section img {
   width: 100%;
-  height: 460px;
+  height: auto;
   display: block;
-  object-fit: cover;
 }
 
 .story-section h2,
@@ -1228,6 +1257,8 @@ footer {
 }
 
 .service-detail-grid article {
+  display: flex;
+  flex-direction: column;
   min-height: 375px;
   padding: 32px 2.8vw;
   border-top: 1px solid var(--line);
@@ -1257,6 +1288,11 @@ footer {
 .service-detail-grid p {
   max-width: 290px;
   color: #4b5e5a;
+}
+
+.service-detail-grid .button {
+  align-self: flex-start;
+  margin-top: auto;
 }
 
 .service-detail-grid-single {
@@ -1569,28 +1605,6 @@ footer {
     justify-content: flex-start;
   }
 
-  .content-header {
-    height: auto;
-    min-height: 67px;
-    flex-wrap: wrap;
-    gap: 12px;
-    padding-top: 16px;
-    padding-bottom: 14px;
-  }
-
-  .content-header nav {
-    display: flex;
-    order: 3;
-    width: 100%;
-    justify-content: space-between;
-    gap: 0;
-    font-size: 9px;
-  }
-
-  .content-header .header-cta {
-    display: none;
-  }
-
   .site-header {
     height: 67px;
   }
@@ -1655,18 +1669,20 @@ footer {
 
   .intro-content .eyebrow,
   .intro-content h2,
-  .intro-content .body-copy {
+  .intro-content .body-copy,
+  .intro-image {
     grid-column: auto;
     grid-row: auto;
   }
 
   .intro-content .eyebrow {
     position: static;
+    text-align: center;
   }
 
   .intro-image img {
     width: min(55%, 210px);
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
   }
 
   .intro-content {
@@ -1711,7 +1727,11 @@ footer {
   }
 
   .book-visuals {
-    height: 390px;
+    height: clamp(390px, 80vw, 610px);
+  }
+
+  .books-copy h2 {
+    line-height: 1.2;
   }
 
   .tomme-mockup {
@@ -1727,6 +1747,7 @@ footer {
   }
 
   .organization h2 {
+    line-height: 1.2;
     margin: 48px 0;
   }
 
@@ -1765,6 +1786,10 @@ footer {
     padding: 75px 6vw 55px;
   }
 
+  .page-intro h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
   .page-intro img {
     min-height: 290px;
     max-height: 380px;
@@ -1794,10 +1819,6 @@ footer {
 
   .quote-panel {
     padding: 75px 8vw;
-  }
-
-  .story-section img {
-    height: 320px;
   }
 
   .service-detail-grid {
@@ -1853,12 +1874,12 @@ footer {
   }
 
   .book-banner {
-    min-height: 42px;
+    min-height: 48px;
     padding: 0 6vw;
   }
 
   .book-banner-track {
-    font-size: 8px;
+    font-size: 13px;
     gap: 28px;
   }
 
@@ -1874,6 +1895,18 @@ footer {
 
   .book-banner-dismiss {
     padding-left: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-services {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-services span:not(:last-child)::after {
+    content: none;
   }
 }
 

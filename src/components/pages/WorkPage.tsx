@@ -47,10 +47,15 @@ export default function WorkPage() {
             <br />
             Training &amp; Speaking
           </h2>
-          <p>
-            Customized leadership development experiences for organizations, leadership teams, and professionals who want practical strategies they can immediately apply.
-            Alongside insightful, candid, and practical speaking on leadership, resilience, professional growth, navigating change, and the lessons that shape exceptional leaders.
-          </p>
+          <div>
+            <p>
+              Customized leadership development experiences for organizations, leadership teams, and professionals who want practical strategies they can immediately apply.
+            </p>
+            <p>&nbsp;</p>
+            <p>
+              Alongside insightful, candid, and practical speaking on leadership, resilience, professional growth, navigating change, and the lessons that shape exceptional leaders.
+            </p>
+          </div>
         </article>
       </section>
       <section className="organization work-cta">

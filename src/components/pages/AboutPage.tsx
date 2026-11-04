@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import leadershipImpactPortrait from "@/assets/JeanetteMills-Finals-9.jpg";
+import leadershipImpactPortrait from "@/assets/JeanetteMills-Finals-7.jpg";
 import aboutPortrait from "@/assets/JeanetteMills-Finals-87.jpg";
 import tommesGirlMockup from "@/assets/tommes-girl-mockup.png";
 import { ContentPageLayout, PageIntro } from "@/components/ContentPageLayout";
@@ -12,7 +12,7 @@ export default function AboutPage() {
         eyebrow="Leadership is a practice"
         title={
           <>
-            Lead boldly.™
+            Lead Boldly™.
             <br />
             Develop people.
             <br />
@@ -39,7 +39,7 @@ export default function AboutPage() {
             organizations ready to strengthen how they lead people and
             performance. Through executive training, leadership development,
             speaking, coaching, and the principles in{" "}
-            <em>Tomme’s Girl</em> and the LEAD BOLDLY™ Leadership Workbook,
+            <em>Tomme's Girl</em> and the LEAD BOLDLY™ Leadership Workbook,
             Jeannette helps leaders move beyond managing responsibilities to
             leading with greater clarity, confidence, accountability, and
             impact.
@@ -90,9 +90,9 @@ export default function AboutPage() {
         <div>
           <h2>
             Leadership Development Built for
-            <br />
-            <em>Today's World.</em>
+            <em className="pl-4">Today's World.</em>
           </h2>
+          <p>&nbsp;</p>
           <p className="lead-copy">
             Leadership becomes most important when circumstances become
             difficult.
@@ -104,7 +104,7 @@ export default function AboutPage() {
             sight of the people responsible for producing the results.
           </p>
           <p>
-            Jeannette’s training and coaching draw from decades of firsthand
+            Jeannette's training and coaching draw from decades of firsthand
             leadership experience rather than theory alone. Her programs help
             leaders examine how they show up, how they influence others, and how
             their everyday leadership behaviors affect organizational culture
@@ -125,6 +125,7 @@ export default function AboutPage() {
             leadership teams, and professionals who want practical strategies
             they can immediately apply.
           </p>
+          <p>&nbsp;</p>
           <Link className="button button-dark" to="/work-with-jeannette">
             Explore training &amp; coaching <ArrowRight size={18} />
           </Link>
@@ -141,6 +142,7 @@ export default function AboutPage() {
             resilience, professional growth, navigating change, and the lessons
             that shape exceptional leaders.
           </p>
+          <p>&nbsp;</p>
           <Link className="button button-dark" to="/contact">
             Explore speaking <ArrowRight size={18} />
           </Link>
@@ -153,11 +155,12 @@ export default function AboutPage() {
             Leadership Tools
           </h2>
           <p>
-            <em>Tomme’s Girl</em> and the LEAD BOLDLY™ Leadership Workbook
+            <em>Tomme's Girl</em> and the LEAD BOLDLY™ Leadership Workbook
             combine lived experience, leadership lessons, reflection, and
             application to help individuals and organizations turn insight into
             action.
           </p>
+          <p>&nbsp;</p>
           <Link className="button button-dark" to="/books">
             Explore products <ArrowRight size={18} />
           </Link>
@@ -168,24 +171,27 @@ export default function AboutPage() {
           <img src={tommesGirlMockup} alt="Tomme's Girl by Jeannette Mills" />
         </div>
         <div>
-          <h2>
-            From <em>Tomme's Girl</em> to Leading Boldly.
+          <h2 style={{ lineHeight: 1.2 }}>
+            From <em className="book-title">Tomme's Girl</em> to{" "}
+            <span className="book-title">Lead Boldly™</span>.
           </h2>
           <p>
-            Long before Jeannette Mills became a senior executive, she was Tomme’s girl. Her story began on the rough streets of Baltimore where survival was not guaranteed. By imaginign a future beyond her circustances, Jeannette developed leadeership skills and principles that guided her into the life she'd always dreamed of, but with twists and turns she could not have anticipated.
+            Long before Jeannette Mills became a senior executive, she was Tomme's girl. Her story began on the streets of Baltimore where survival was not guaranteed. By imagining a future beyond her circustances, Jeannette developed leadership skills and principles to create the life she'd always dreamed of with a few unexpected twists and turns.
           </p>
+          <p>&nbsp;</p>
           <p>
-            <em>Tomme’s Girl</em> tells the story behind the leader. LEAD
+            <em>Tomme's Girl</em> tells the story behind the leader. LEAD
             BOLDLY™ takes the leadership lessons within that story and turns
             them into practical principles leaders can examine and apply within
             their own lives, teams, and organizations.
           </p>
+          <p>&nbsp;</p>
           <p>
             Together, they create more than a memoir. They create a leadership
             development experience.
           </p>
           <Link className="button button-dark" to="/books">
-            Discover Tomme’s Girl &amp; LEAD BOLDLY™ <ArrowRight size={18} />
+            Discover Tomme's Girl &amp; LEAD BOLDLY™ <ArrowRight size={18} />
           </Link>
         </div>
       </section>
@@ -203,7 +209,7 @@ export default function AboutPage() {
           programs, and leadership development cohorts.
         </p>
         <p>
-          Training may also incorporate <em>Tomme’s Girl</em> and the LEAD
+          Training may also incorporate <em>Tomme's Girl</em> and the LEAD
           BOLDLY™ Leadership Workbook to create an integrated learning
           experience that allows participants to read, reflect, discuss, and
           apply the principles long after the session concludes.

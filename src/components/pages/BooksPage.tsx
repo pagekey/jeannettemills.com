@@ -12,7 +12,10 @@ export default function BooksPage() {
         eyebrow="Stories that shape leaders"
         title={
           <>
-            From <em>Tomme’s Girl</em> to Lead Boldly™.
+            <span className="book-page-title">
+              From <em className="book-title">Tomme’s Girl</em> to{" "}
+              <span className="book-title">Lead Boldly™</span>.
+            </span>
           </>
         }
         image={booksPortrait}
@@ -36,9 +39,11 @@ export default function BooksPage() {
             leadership, and lessons that could never have been learned from a
             textbook alone.
           </p>
+          <p>&nbsp;</p>
           <p>
             <em>Tomme’s Girl</em> tells the story behind the leader.
           </p>
+          <p>&nbsp;</p>
           <Link className="button button-dark" to="/contact">
             Buy the book <ArrowRight size={18} />
           </Link>

@@ -88,7 +88,7 @@ export default function ContactForm() {
             <a href="mailto:boldgirlboss@gmail.com">boldgirlboss@gmail.com</a>.
           </>
         ) : (
-          "Fields marked above are required."
+          ""
         )}
       </p>
     </form>

@@ -18,7 +18,7 @@ export default function ContactPage() {
       <section className="contact-section">
         <div>
           <p className="eyebrow">Work with Jeannette</p>
-          <h2>
+          <h2 style={{ lineHeight: 1.1 }}>
             Build a leadership culture capable of producing{" "}
             <em>sustainable performance.</em>
           </h2>
