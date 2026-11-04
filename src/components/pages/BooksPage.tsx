@@ -14,7 +14,7 @@ export default function BooksPage() {
           <>
             <span className="book-page-title">
               From <em className="book-title">Tomme’s Girl</em> to{" "}
-              <span className="book-title">Lead Boldly™</span>.
+              <span className="book-title">Lead Boldly<sup className="title-tm">™</sup></span>.
             </span>
           </>
         }

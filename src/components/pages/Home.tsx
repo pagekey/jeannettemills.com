@@ -103,7 +103,7 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow light">Leadership is a practice</p>
             <h1>
-              Lead Boldly<span style={{ fontWeight: "50%" }}>™</span>.
+              Lead Boldly<sup className="title-tm">™</sup>.
               <br />
               <em>Build what lasts.</em>
             </h1>
@@ -266,7 +266,7 @@ export default function Home() {
           <p className="eyebrow">The story behind the work</p>
           <h2>
             From <em className="book-title">Tomme's Girl</em> to{" "}
-            <span className="book-title">Lead Boldly™</span>.
+            <span className="book-title">Lead Boldly<sup className="title-tm">™</sup></span>.
           </h2>
           <p>
             Long before Jeannette Mills became a senior executive, she was
@@ -295,7 +295,7 @@ export default function Home() {
           {/* <span className="round-mark">JM</span> */}
         </div>
         <h2>
-          Bring <span className="book-title"><em>Lead Boldly</em>™</span>{" "}
+          Bring <span className="book-title"><em>Lead Boldly</em><sup className="title-tm">™</sup></span>{" "}
           to your organization.
         </h2>
         <div className="organization-bottom">

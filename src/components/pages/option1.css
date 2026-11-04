@@ -620,6 +620,14 @@ nav a.active {
   margin: 0 0 24px;
 }
 
+.title-tm {
+  font-family: Arial, sans-serif;
+  font-size: 0.4em;
+  letter-spacing: 0;
+  line-height: 0;
+  vertical-align: super;
+}
+
 .light {
   color: #c6d5c7;
 }
@@ -997,11 +1005,6 @@ h2 em {
   max-width: 1000px;
   font-size: clamp(3.1rem, 6.1vw, 7rem);
   margin: 75px 0;
-}
-
-.organization sup {
-  font: 12px sans-serif;
-  letter-spacing: 0;
 }
 
 .organization-bottom {

@@ -12,7 +12,7 @@ export default function AboutPage() {
         eyebrow="Leadership is a practice"
         title={
           <>
-            Lead Boldly™.
+            Lead Boldly<sup className="title-tm">™</sup>.
             <br />
             Develop people.
             <br />
@@ -173,7 +173,7 @@ export default function AboutPage() {
         <div>
           <h2 style={{ lineHeight: 1.2 }}>
             From <em className="book-title">Tomme's Girl</em> to{" "}
-            <span className="book-title">Lead Boldly™</span>.
+            <span className="book-title">Lead Boldly<sup className="title-tm">™</sup></span>.
           </h2>
           <p>
             Long before Jeannette Mills became a senior executive, she was Tomme's girl. Her story began on the streets of Baltimore where survival was not guaranteed. By imagining a future beyond her circumstances, Jeannette developed leadership skills and principles to create the life she'd always dreamed of with a few unexpected twists and turns.
@@ -196,7 +196,7 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="organization work-cta">
-        <p className="eyebrow">Bring LEAD BOLDLY™ to your organization</p>
+        <p className="eyebrow">Bring LEAD BOLDLY<sup className="title-tm">™</sup> to your organization</p>
         <h2>
           Leadership development should produce more than an inspiring
           afternoon.
