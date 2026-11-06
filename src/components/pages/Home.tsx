@@ -80,16 +80,32 @@ export default function Home() {
           {menuOpen ? <X size={24} /> : <Menu size={25} />}
         </button>
         <nav className={menuOpen ? "open" : ""} aria-label="Primary navigation">
-          <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/about" onClick={closeMenu}>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+            to="/about"
+            onClick={closeMenu}
+          >
             About
           </NavLink>
-          <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/work-with-jeannette" onClick={closeMenu}>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+            to="/work-with-jeannette"
+            onClick={closeMenu}
+          >
             Work With Jeannette
           </NavLink>
-          <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/books" onClick={closeMenu}>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+            to="/books"
+            onClick={closeMenu}
+          >
             Books
           </NavLink>
-          <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/contact" onClick={closeMenu}>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+            to="/contact"
+            onClick={closeMenu}
+          >
             Contact
           </NavLink>
         </nav>
@@ -103,7 +119,10 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow light">Leadership is a practice</p>
             <h1>
-              Lead Boldly<sup className="title-tm">™</sup>.
+              Lead Boldly
+              <span className="title-tm-over-period">
+                .<sup className="title-tm">™</sup>
+              </span>
               <br />
               <em>Build what lasts.</em>
             </h1>
@@ -175,8 +194,10 @@ export default function Home() {
             <strong>matter.</strong>
           </p>
           <p>
-            Her leadership journey included serving in senior executive roles at large public and private organizations.
-            Her work is grounded in a simple rule: leadership is not only about what you accomplish; it is also about your enduring impact on people throughout the journey.
+            Her leadership journey included serving in senior executive roles at
+            large public and private organizations. Her work is grounded in a
+            simple rule: leadership is not only about what you accomplish; it is
+            also about your enduring impact on people throughout the journey.
           </p>
           <p>
             Today, she brings those lessons directly to organizations,
@@ -242,7 +263,9 @@ export default function Home() {
               Leadership Tools
             </h3>
             <p>
-              Tomme's Girl and the Lead Boldly™ Leadership Workbook combine lived experience, leadership lessons, reflection, and application to help individuals and organizations turn insight into action.
+              Tomme's Girl and the Lead Boldly™ Leadership Workbook combine
+              lived experience, leadership lessons, reflection, and application
+              to help individuals and organizations turn insight into action.
             </p>
             <ArrowLink href="/books">Explore products</ArrowLink>
           </article>
@@ -266,7 +289,12 @@ export default function Home() {
           <p className="eyebrow">The story behind the work</p>
           <h2>
             From <em className="book-title">Tomme's Girl</em> to{" "}
-            <span className="book-title">Lead Boldly<sup className="title-tm">™</sup></span>.
+            <span className="book-title">
+              Lead Boldly
+              <span className="title-tm-over-period">
+                .<sup className="title-tm">™</sup>
+              </span>
+            </span>
           </h2>
           <p>
             Long before Jeannette Mills became a senior executive, she was
@@ -277,8 +305,8 @@ export default function Home() {
           <p>
             <em>Tomme's Girl</em> tells the story behind the leader. The{" "}
             <strong>LEAD BOLDLY™ </strong>
-            Leadership Workbook* turns those lessons into practical
-            principles leaders can examine and apply.
+            Leadership Workbook* turns those lessons into practical principles
+            leaders can examine and apply.
           </p>
           <p className="books-statement">
             Together, they create more than a memoir. They create a leadership
@@ -295,7 +323,11 @@ export default function Home() {
           {/* <span className="round-mark">JM</span> */}
         </div>
         <h2>
-          Bring <span className="book-title"><em>Lead Boldly</em><sup className="title-tm">™</sup></span>{" "}
+          Bring{" "}
+          <span className="book-title">
+            <em>Lead Boldly</em>
+            <sup className="title-tm">™</sup>
+          </span>{" "}
           to your organization.
         </h2>
         <div className="organization-bottom">

@@ -6,10 +6,16 @@ export default function ContactPage() {
   return (
     <ContentPageLayout>
       <PageIntro
-        eyebrow="Let's start a conversation"
+        eyebrow="Ready for what's next?"
         title={
           <>
-            Ready to lead <em>more boldly?</em>
+            Let's talk about{" "}
+            <em className="title-no-wrap">
+              Lead Bold
+              <span className="title-tm-over-period">
+                .<sup className="title-tm">™</sup>
+              </span>
+            </em>
           </>
         }
         image={contactPortrait}
@@ -19,8 +25,8 @@ export default function ContactPage() {
         <div>
           <p className="eyebrow">Work with Jeannette</p>
           <h2 style={{ lineHeight: 1.1 }}>
-            Build a leadership culture capable of producing{" "}
-            <em>sustainable performance.</em>
+            Build a leadership culture that produces{" "}
+            <em>sustainable results.</em>
           </h2>
         </div>
         <div>
@@ -34,8 +40,8 @@ export default function ContactPage() {
           </p>
           <p>
             If your organization is ready to strengthen its leaders, develop its
-            people, and build a leadership culture capable of producing
-            sustainable performance, the conversation starts here.
+            people, and build a leadership culture that produces
+            sustainable results, the conversation starts here.
           </p>
           <ContactForm />
         </div>

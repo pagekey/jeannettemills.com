@@ -53,7 +53,7 @@ export default function WorkPage() {
             </p>
             <p>&nbsp;</p>
             <p>
-              Alongside insightful, candid, and practical speaking on leadership, resilience, professional growth, navigating change, and the lessons that shape exceptional leaders.
+              Insightful, candid, and practical speaking on leadership, resilience, professional growth, navigating change, and the lessons that shape exceptional leaders.
             </p>
           </div>
         </article>

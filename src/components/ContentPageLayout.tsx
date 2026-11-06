@@ -44,7 +44,7 @@ export function SiteFooter() {
         <div className="footer-credentials">
           <p>Executive Leadership Strategist</p>
           <p>
-            Author of <em>Tomme’s Girl</em>, Creator of LEAD BOLDLY™, Speaker
+            Author of <em>Tomme’s Girl</em> &bull; Creator of LEAD BOLDLY™ &bull; Speaker
             &amp; Trainer
           </p>
         </div>

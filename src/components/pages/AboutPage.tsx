@@ -12,7 +12,10 @@ export default function AboutPage() {
         eyebrow="Leadership is a practice"
         title={
           <>
-            Lead Boldly<sup className="title-tm">™</sup>.
+            Lead Boldly
+            <span className="title-tm-over-period">
+              .<sup className="title-tm">™</sup>
+            </span>
             <br />
             Develop people.
             <br />
@@ -38,11 +41,10 @@ export default function AboutPage() {
             organizational insight, and lived wisdom to leaders and
             organizations ready to strengthen how they lead people and
             performance. Through executive training, leadership development,
-            speaking, coaching, and the principles in{" "}
-            <em>Tomme's Girl</em> and the LEAD BOLDLY™ Leadership Workbook,
-            Jeannette helps leaders move beyond managing responsibilities to
-            leading with greater clarity, confidence, accountability, and
-            impact.
+            speaking, coaching, and the principles in <em>Tomme's Girl</em> and
+            the LEAD BOLDLY™ Leadership Workbook, Jeannette helps leaders move
+            beyond managing responsibilities to leading with greater clarity,
+            confidence, accountability, and impact.
           </p>
           <Link className="button button-dark" to="/contact">
             Book a consultation <ArrowRight size={18} />
@@ -50,10 +52,7 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="detail-section story-section">
-        <img
-          src={leadershipImpactPortrait}
-          alt="Jeannette Mills"
-        />
+        <img src={leadershipImpactPortrait} alt="Jeannette Mills" />
         <div>
           <h2>
             From Executive Experience to <em>Leadership Impact.</em>
@@ -64,14 +63,16 @@ export default function AboutPage() {
             <strong>matter.</strong>
           </p>
           <p>
-            Her leadership journey included serving in senior executive roles at large public and private organizations. Her experience extends beyond the executive
-            suite through corporate and nonprofit board service, mentoring,
-            speaking, and the development of emerging and established leaders.
+            Her leadership journey included serving in senior executive roles at
+            large public and private organizations. Her experience extends
+            beyond the executive suite through corporate and nonprofit board
+            service, mentoring, speaking, and the development of emerging and
+            established leaders.
           </p>
           <p>
-            Her work is grounded in a simple rule: leadership is not only
-            about what you accomplish; it is also about your enduring impact on
-            people throughout the journey.
+            Her work is grounded in a simple rule: leadership is not only about
+            what you accomplish; it is also about your enduring impact on people
+            throughout the journey.
           </p>
           <p>
             Today, Jeannette brings those lessons directly to organizations,
@@ -173,10 +174,20 @@ export default function AboutPage() {
         <div>
           <h2 style={{ lineHeight: 1.2 }}>
             From <em className="book-title">Tomme's Girl</em> to{" "}
-            <span className="book-title">Lead Boldly<sup className="title-tm">™</sup></span>.
+            <span className="book-title">
+              Lead Boldly
+              <span className="title-tm-over-period">
+                .<sup className="title-tm">™</sup>
+              </span>
+            </span>
           </h2>
           <p>
-            Long before Jeannette Mills became a senior executive, she was Tomme's girl. Her story began on the streets of Baltimore where survival was not guaranteed. By imagining a future beyond her circumstances, Jeannette developed leadership skills and principles to create the life she'd always dreamed of with a few unexpected twists and turns.
+            Long before Jeannette Mills became a senior executive, she was
+            Tomme's girl. Her story began on the streets of Baltimore where
+            survival was not guaranteed. By imagining a future beyond her
+            circumstances, Jeannette developed leadership skills and principles
+            to create the life she'd always dreamed of with a few unexpected
+            twists and turns.
           </p>
           <p>&nbsp;</p>
           <p>
@@ -196,7 +207,10 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="organization work-cta">
-        <p className="eyebrow">Bring LEAD BOLDLY<sup className="title-tm">™</sup> to your organization</p>
+        <p className="eyebrow">
+          Bring LEAD BOLDLY<sup className="title-tm">™</sup> to your
+          organization
+        </p>
         <h2>
           Leadership development should produce more than an inspiring
           afternoon.
