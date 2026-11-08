@@ -65,7 +65,15 @@ export function SiteFooter() {
         <span>
           <em>Tomme’s Girl</em> | LEAD BOLDLY™ Leadership Workbook
         </span>
-        <span>&copy; Jeannette Mills. All Rights Reserved.</span>
+        <span className="footer-legal">
+          <span className="footer-credit">
+            Website by{" "}
+            <a href="https://pagekey.io" target="_blank" rel="noreferrer">
+              PageKey
+            </a>
+          </span>
+          &copy; Jeannette Mills. All Rights Reserved.
+        </span>
       </div>
     </footer>
   );

@@ -11,7 +11,7 @@ export default function ContactPage() {
           <>
             Let's talk about{" "}
             <em className="title-no-wrap">
-              Lead Bold
+              Lead Boldly
               <span className="title-tm-over-period">
                 .<sup className="title-tm">™</sup>
               </span>
